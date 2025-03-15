@@ -70,7 +70,7 @@ for p, ax in zip(itertools.product(prior_params, data), itertools.chain(*axes)):
         max(beta.pdf(x, alpha, beta_)), 
         f'MAP: {mode:.2f}', 
         color='grey', 
-        fontsize=10,
+        # fontsize=10,
         horizontalalignment='right'
     )
 
@@ -79,7 +79,7 @@ for p, ax in zip(itertools.product(prior_params, data), itertools.chain(*axes)):
     ax.set_ylabel(r'Posterior Density')
 
 # Adding title and labels
-plt.suptitle(r'Posterior Distributions for $\theta$', fontsize=14)
+plt.suptitle(r'Posterior Distributions for $\theta$')
 
 plt.tight_layout()
 
